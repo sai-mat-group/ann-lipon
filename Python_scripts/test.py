@@ -12,6 +12,7 @@ import os
 from pymatgen.core.surface import SlabGenerator, generate_all_slabs, Slab, get_symmetrically_distinct_miller_indices  
 from pymatgen import Lattice, Structure
 from pymatgen.transformations.standard_transformations import AutoOxiStateDecorationTransformation
+from pymatgen.transformations.site_transformations import RemoveSitesTransformation
 from pymatgen.io.vasp.inputs import Kpoints, Poscar
 import math
 from pymatgen.io.vasp.sets import MPRelaxSet, MPMetalRelaxSet
@@ -45,14 +46,20 @@ poscar.write_file('POSCAR')
 orig_dir = '/home/smart/Rutvij/'
 os.chdir(path='/home/smart/Rutvij/BaseStructures/Input_files_mp_1960/')
 structure = Structure.from_file('Li2O_mp-1960_conventional_standard.cif')
+structure = AutoOxiStateDecorationTransformation().apply_transformation(structure)
 list_of_indices = get_symmetrically_distinct_miller_indices(structure, 1)
 interlayer_spacing = structure.lattice.d_hkl(list_of_indices[0])
 vacuum_layers = math.ceil((20/(interlayer_spacing)))
 slabgen = SlabGenerator(structure, list_of_indices[0], 7, vacuum_layers, in_unit_planes=True)
 slabs = slabgen.get_slabs()
 for x in range(len(slabs)):
+    print(slabs[x].is_polar())
+    print(slabs[x].is_symmetric())
+    slabs[x].make_supercell([2,1,1])
     sites = slabs[x].get_sorted_structure().sites
+    print(len(slabs[x].get_sorted_structure().sites))
     surface_sites = slabs[x].get_surface_sites()
+    print(surface_sites)
     sd_list=[]
     layer1 =[]
     for a in range(len(sites)):
@@ -70,8 +77,8 @@ for x in range(len(slabs)):
                         sd_list[b] = [True,True,True]
     orignal_slab = slabs[x].copy()
     print(layer1)
-    slabs[x].remove_sites(layer1)
-    print(slabs[x])
+    slabs[x] = RemoveSitesTransformation(layer1).apply_transformation(slabs[x])
+    print(len(slabs[x].get_sorted_structure().sites))
     surface_sites = slabs[x].get_surface_sites()
     print(surface_sites)
     for b in range(len(sites)):
@@ -82,17 +89,15 @@ for x in range(len(slabs)):
             if sites[b] == surface_sites['bottom'][c][0]:
                         sd_list[b] = [True,True,True]
     
-print(surface_sites)    
-'''  
     poscar = Poscar(orignal_slab.get_sorted_structure(), selective_dynamics=sd_list)
-    os.chdir(orig_dir)
-    poscar.write_file('POSCAR')
-'''
+    os.chdir(path='/home/smart/Rutvij/BaseStructures/Input_files_mp_1960/test')
+    poscar.write_file('%d_POSCAR' %x)
 
 
-# Not working for one of the 111 slabs. Have to check if it is the tasker 3 slab 
-# Have to check if the surface removal code works for the non polar slabs only.
-# If non polar slabs are not symmetric then will have to check for other methods
+
+# Not working for one of the 111 slabs. Have to check if it is the tasker 3 slab Ans: Surprisingly
+# works for the polar slab and not the non-polar one. 
+# 
 
 
 
