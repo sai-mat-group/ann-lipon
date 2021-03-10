@@ -50,7 +50,7 @@ def MP_write_input(slab: Slab, x: float):
 
 #Generates slabs after seperating them as polar and non polar
 orig_dir = '/home/smart/Rutvij/'
-os.chdir(path='/home/smart/Rutvij/BaseStructures/Input_files_mp_13725/')
+os.chdir(path='/home/smart/Rutvij/BaseStructures/Input_files_mp_1960/')
 structure = Structure.from_file('POSCAR')
 structure = ConventionalCellTransformation().apply_transformation(structure)
 structure = AutoOxiStateDecorationTransformation().apply_transformation(structure)
@@ -103,8 +103,8 @@ for index in list_of_indices:
         MPobject.write_input(output_dir = 'nonpolar_surface_index_%s_slab_%d' %(miller_index,x), make_dir_if_not_present=True)
         '''
 #for slab in nonpolar_slabs:
-surface_sites = nonpolar_slabs[-7].get_surface_sites()
-sites = nonpolar_slabs[-7].get_sorted_structure().sites
+surface_sites = nonpolar_slabs[-1].get_surface_sites()
+sites = nonpolar_slabs[-1].get_sorted_structure().sites
 layer1_index = []
 layer1_site = []
 sd_list = []
@@ -144,10 +144,11 @@ for b in range(len(sites)):
     for c in range(len(layer2)):
         if sites[b] == layer2[c]:
             sd_list[b] = [True,True,True]
-            
-poscar = Poscar(nonpolar_slabs[-7].get_sorted_structure(), selective_dynamics=sd_list)            
-os.chdir(path='/home/smart/Rutvij/BaseStructures/Input_files_mp_13725/nonpolar_surface_index_(1, 1, 1)_slab_11')
+
+poscar = Poscar(nonpolar_slabs[-1].get_sorted_structure(), selective_dynamics=sd_list)            
+os.chdir(path='/home/smart/Rutvij/BaseStructures/Input_files_mp_1960/test/nonpolar_surface_index_(1, 0, 0)_slab_0')
 poscar.write_file('POSCAR')
+
 
 # Any Pymatgen surface method seems to work only for non polar, symmetric slabs. Therefore orignally when I tried to
 # remove the first layer and find surface sites again it didnt work because the slab was no longer symmetric or 
