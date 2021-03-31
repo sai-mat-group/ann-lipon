@@ -1,0 +1,48 @@
+ running on   12 total cores
+ distrk:  each k-point on   12 cores,    1 groups
+ distr:  one band on    6 cores,    2 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 20 2021 11:25:07) complex                        
+  
+ POSCAR found type information on POSCAR LiN 
+ POSCAR found :  2 types and       4 ions
+ scaLAPACK will be used
+ -----------------------------------------------------------------------------
+|                                                                             |
+|               ----> ADVICE to this user running VASP <----                  |
+|                                                                             |
+|     You have a (more or less) 'small supercell' and for smaller cells       |
+|     it is recommended to use the reciprocal-space projection scheme!        |
+|     The real-space optimization is not efficient for small cells and it     |
+|     is also less accurate ...                                               |
+|     Therefore, set LREAL=.FALSE. in the INCAR file.                         |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ LDA part: xc-table for Pade appr. of Perdew
+ generate k-points for:   10   10    8
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.597578424160E+02    0.59758E+02   -0.63538E+03 12480   0.118E+03
+DAV:   2    -0.875320613865E+01   -0.68511E+02   -0.64063E+02 16376   0.249E+02
+DAV:   3    -0.178574924026E+02   -0.91043E+01   -0.90463E+01 20468   0.728E+01
+DAV:   4    -0.186020438211E+02   -0.74455E+00   -0.74370E+00 18832   0.185E+01
+DAV:   5    -0.186122387268E+02   -0.10195E-01   -0.10194E-01 17884   0.257E+00    0.141E+01
+RMM:   6    -0.156270768383E+02    0.29852E+01   -0.86697E+00 14372   0.162E+01    0.658E+00
+RMM:   7    -0.156528826440E+02   -0.25806E-01   -0.76474E-01 16443   0.927E+00    0.244E+00
+RMM:   8    -0.155939274200E+02    0.58955E-01   -0.31997E-01 20279   0.394E+00    0.137E+00
+RMM:   9    -0.156037894279E+02   -0.98620E-02   -0.14194E-01 19340   0.301E+00    0.499E-01
+RMM:  10    -0.156087414499E+02   -0.49520E-02   -0.55511E-02 21721   0.172E+00    0.267E-01
+RMM:  11    -0.156115688986E+02   -0.28274E-02   -0.23041E-02 21894   0.925E-01    0.132E-01
+RMM:  12    -0.156128375898E+02   -0.12687E-02   -0.92451E-03 21857   0.684E-01    0.526E-02
+RMM:  13    -0.156134447072E+02   -0.60712E-03   -0.47761E-03 22270   0.411E-01    0.471E-02
+RMM:  14    -0.156136568676E+02   -0.21216E-03   -0.19188E-03 21080   0.255E-01    0.185E-02
+RMM:  15    -0.156137618850E+02   -0.10502E-03   -0.94340E-04 20222   0.169E-01    0.507E-03
+RMM:  16    -0.156138141063E+02   -0.52221E-04   -0.43033E-04 18880   0.114E-01    0.656E-03
+RMM:  17    -0.156138385969E+02   -0.24491E-04   -0.21481E-04 17722   0.802E-02    0.642E-03
+RMM:  18    -0.156138512675E+02   -0.12671E-04   -0.10872E-04 16915   0.616E-02    0.124E-02
+RMM:  19    -0.156138568749E+02   -0.56075E-05   -0.55637E-05 15789   0.491E-02
+   1 F= -.15613857E+02 E0= -.15613857E+02  d E =0.000000E+00  mag=    -0.0000

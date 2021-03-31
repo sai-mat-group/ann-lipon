@@ -1,0 +1,32 @@
+ running on   12 total cores
+ distrk:  each k-point on   12 cores,    1 groups
+ distr:  one band on    6 cores,    2 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 20 2021 11:25:07) complex                        
+  
+ POSCAR found type information on POSCAR P O 
+ POSCAR found :  2 types and      14 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ generate k-points for:    7    7    7
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.546447394614E+03    0.54645E+03   -0.42422E+04 35944   0.141E+03
+DAV:   2    -0.703104787300E+02   -0.61676E+03   -0.59965E+03 44820   0.333E+02
+DAV:   3    -0.109246667360E+03   -0.38936E+02   -0.38663E+02 43176   0.903E+01
+DAV:   4    -0.109860831816E+03   -0.61416E+00   -0.61159E+00 44576   0.120E+01
+DAV:   5    -0.109874818905E+03   -0.13987E-01   -0.13965E-01 43552   0.172E+00    0.415E+01
+DAV:   6    -0.924040656591E+02    0.17471E+02   -0.57479E+01 40600   0.358E+01    0.211E+01
+DAV:   7    -0.966287277129E+02   -0.42247E+01   -0.99807E+00 42284   0.129E+01    0.635E+00
+DAV:   8    -0.974789641867E+02   -0.85024E+00   -0.19511E+00 42896   0.561E+00    0.285E+00
+DAV:   9    -0.974691113412E+02    0.98528E-02   -0.94828E-02 42360   0.187E+00    0.141E+00
+DAV:  10    -0.974683113157E+02    0.80003E-03   -0.29763E-02 48744   0.106E+00    0.434E-01
+DAV:  11    -0.974691277831E+02   -0.81647E-03   -0.45087E-03 41800   0.369E-01    0.257E-01
+DAV:  12    -0.974695183633E+02   -0.39058E-03   -0.17255E-03 45904   0.231E-01    0.118E-01
+DAV:  13    -0.974696154215E+02   -0.97058E-04   -0.17526E-04 41856   0.827E-02    0.479E-02
+DAV:  14    -0.974696314480E+02   -0.16026E-04   -0.97059E-05 44720   0.542E-02    0.178E-02
+DAV:  15    -0.974696357704E+02   -0.43224E-05   -0.10192E-05 27272   0.209E-02
+   1 F= -.97469636E+02 E0= -.97469636E+02  d E =0.000000E+00  mag=    -0.0004

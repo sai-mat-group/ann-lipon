@@ -1,0 +1,343 @@
+ running on   12 total cores
+ distrk:  each k-point on   12 cores,    1 groups
+ distr:  one band on    6 cores,    2 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 20 2021 11:25:07) complex                        
+  
+ POSCAR found type information on POSCAR LiP 
+ POSCAR found :  2 types and       8 ions
+ scaLAPACK will be used
+ -----------------------------------------------------------------------------
+|                                                                             |
+|               ----> ADVICE to this user running VASP <----                  |
+|                                                                             |
+|     You have a (more or less) 'small supercell' and for smaller cells       |
+|     it is recommended to use the reciprocal-space projection scheme!        |
+|     The real-space optimization is not efficient for small cells and it     |
+|     is also less accurate ...                                               |
+|     Therefore, set LREAL=.FALSE. in the INCAR file.                         |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ LDA part: xc-table for Pade appr. of Perdew
+ generate k-points for:    8    9    4
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.154908920635E+03    0.15491E+03   -0.12000E+04  9776   0.127E+03
+DAV:   2     0.174227244418E+01   -0.15317E+03   -0.14511E+03 10780   0.312E+02
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007FDAFEBC53C0  Unknown               Unknown  Unknown
+librxm-fi.so       00007FDA7EC5C901  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FDAFF5201AE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FDAFEDA3EA4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FDAFF54B73D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FDAFF127A1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FDAFECDAFC7  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FDAFEEB3C55  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FDAFECDBF84  PMPI_Alltoallv        Unknown  Unknown
+libmpifort.so.12.  00007FDAFFCD129A  pmpi_alltoallv_       Unknown  Unknown
+vasp_std           00000000004483F5  Unknown               Unknown  Unknown
+vasp_std           000000000187E06C  Unknown               Unknown  Unknown
+vasp_std           0000000001871486  Unknown               Unknown  Unknown
+vasp_std           0000000001872B94  Unknown               Unknown  Unknown
+vasp_std           0000000001871A79  Unknown               Unknown  Unknown
+vasp_std           000000000061F63D  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DDE9  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007FDAFE8940B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007F51355A03C0  Unknown               Unknown  Unknown
+libtcp-fi.so       00007F50B5AC6500  Unknown               Unknown  Unknown
+libtcp-fi.so       00007F50B5AC7212  Unknown               Unknown  Unknown
+librxm-fi.so       00007F50B5620216  Unknown               Unknown  Unknown
+librxm-fi.so       00007F50B5621C89  Unknown               Unknown  Unknown
+librxm-fi.so       00007F50B5636DFD  Unknown               Unknown  Unknown
+librxm-fi.so       00007F50B5637A0B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5135EFB1AE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F513577EEA4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5135F2673D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5135B02A1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F51356B5FC7  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F513588EC55  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F51356B6F84  PMPI_Alltoallv        Unknown  Unknown
+libmpifort.so.12.  00007F51366AC29A  pmpi_alltoallv_       Unknown  Unknown
+vasp_std           00000000004483F5  Unknown               Unknown  Unknown
+vasp_std           000000000187E06C  Unknown               Unknown  Unknown
+vasp_std           0000000001871486  Unknown               Unknown  Unknown
+vasp_std           0000000001872B94  Unknown               Unknown  Unknown
+vasp_std           0000000001871A79  Unknown               Unknown  Unknown
+vasp_std           000000000061F63D  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DDE9  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007F513526F0B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007F92B94903C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F92B966E153  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F92B966F071  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F92B9E1673D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F92B99F2A1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F92B95A3287  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F92B977DBCE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F92B95A40FA  MPI_Alltoall          Unknown  Unknown
+libmpifort.so.12.  00007F92BA59C13E  mpi_alltoall__        Unknown  Unknown
+vasp_std           0000000000449E92  Unknown               Unknown  Unknown
+vasp_std           00000000006086D1  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DE57  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007F92B915F0B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007FA6964E73C0  Unknown               Unknown  Unknown
+librxm-fi.so       00007FA61657F500  Unknown               Unknown  Unknown
+librxm-fi.so       00007FA616568C81  Unknown               Unknown  Unknown
+librxm-fi.so       00007FA61657DDFD  Unknown               Unknown  Unknown
+librxm-fi.so       00007FA61657EA0B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA696E421AE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA6966C5EA4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA696E6D73D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA696A49A1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA6965FCFC7  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA6967D5C55  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA6965FDF84  PMPI_Alltoallv        Unknown  Unknown
+libmpifort.so.12.  00007FA6975F329A  pmpi_alltoallv_       Unknown  Unknown
+vasp_std           00000000004483F5  Unknown               Unknown  Unknown
+vasp_std           000000000187E06C  Unknown               Unknown  Unknown
+vasp_std           0000000001871486  Unknown               Unknown  Unknown
+vasp_std           0000000001872B94  Unknown               Unknown  Unknown
+vasp_std           0000000001871A79  Unknown               Unknown  Unknown
+vasp_std           000000000061F63D  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DDE9  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007FA6961B60B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007F96760063C0  Unknown               Unknown  Unknown
+libtcp-fi.so       00007F95F652C5EE  Unknown               Unknown  Unknown
+libtcp-fi.so       00007F95F652D21B  Unknown               Unknown  Unknown
+librxm-fi.so       00007F95F6086216  Unknown               Unknown  Unknown
+librxm-fi.so       00007F95F6087C89  Unknown               Unknown  Unknown
+librxm-fi.so       00007F95F609CDFD  Unknown               Unknown  Unknown
+librxm-fi.so       00007F95F609DA0B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F96769611AE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F96761E4EA4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F967698C73D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F9676568A1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F9676119287  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F96762F3BCE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F967611A0FA  MPI_Alltoall          Unknown  Unknown
+libmpifort.so.12.  00007F967711213E  mpi_alltoall__        Unknown  Unknown
+vasp_std           0000000000449E92  Unknown               Unknown  Unknown
+vasp_std           00000000006086D1  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DE57  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007F9675CD50B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007FD532E3E3C0  Unknown               Unknown  Unknown
+librxm-fi.so       00007FD4B2EBE30C  Unknown               Unknown  Unknown
+librxm-fi.so       00007FD4B2EBFC89  Unknown               Unknown  Unknown
+librxm-fi.so       00007FD4B2ED4DFD  Unknown               Unknown  Unknown
+librxm-fi.so       00007FD4B2ED5A0B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FD5337991AE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FD53301CEA4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FD5337C473D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FD5333A0A1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FD532F51287  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FD53312BBCE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FD532F520FA  MPI_Alltoall          Unknown  Unknown
+libmpifort.so.12.  00007FD533F4A13E  mpi_alltoall__        Unknown  Unknown
+vasp_std           0000000000449E92  Unknown               Unknown  Unknown
+vasp_std           00000000006086D1  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DE57  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007FD532B0D0B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007FB5F980E3C0  Unknown               Unknown  Unknown
+libtcp-fi.so       00007FB579D345EE  Unknown               Unknown  Unknown
+libtcp-fi.so       00007FB579D3521B  Unknown               Unknown  Unknown
+librxm-fi.so       00007FB57988E216  Unknown               Unknown  Unknown
+librxm-fi.so       00007FB57988FC89  Unknown               Unknown  Unknown
+librxm-fi.so       00007FB5798A4DFD  Unknown               Unknown  Unknown
+librxm-fi.so       00007FB5798A5A0B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB5FA1691AE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB5F99ECEA4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB5FA19473D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB5F9D70A1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB5F9921287  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB5F9AFBBCE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB5F99220FA  MPI_Alltoall          Unknown  Unknown
+libmpifort.so.12.  00007FB5FA91A13E  mpi_alltoall__        Unknown  Unknown
+vasp_std           0000000000449E92  Unknown               Unknown  Unknown
+vasp_std           0000000000609FE7  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DE97  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007FB5F94DD0B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007FF7F52703C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF7F5C419C7  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF7F544E27D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF7F544F071  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF7F5BF673D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF7F57D2A1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF7F5385FC7  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF7F555EC55  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF7F5386F84  PMPI_Alltoallv        Unknown  Unknown
+libmpifort.so.12.  00007FF7F637C29A  pmpi_alltoallv_       Unknown  Unknown
+vasp_std           00000000004483F5  Unknown               Unknown  Unknown
+vasp_std           000000000187E06C  Unknown               Unknown  Unknown
+vasp_std           0000000001871486  Unknown               Unknown  Unknown
+vasp_std           0000000001872B94  Unknown               Unknown  Unknown
+vasp_std           0000000001871A79  Unknown               Unknown  Unknown
+vasp_std           000000000061F63D  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DDE9  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007FF7F4F3F0B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007FF1B8C323C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF1B9586491  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF1B8E10EA4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF1B95B873D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF1B9194A1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF1B8D45287  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF1B8F1FBCE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF1B8D460FA  MPI_Alltoall          Unknown  Unknown
+libmpifort.so.12.  00007FF1B9D3E13E  mpi_alltoall__        Unknown  Unknown
+vasp_std           0000000000449E92  Unknown               Unknown  Unknown
+vasp_std           00000000006086D1  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DE57  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007FF1B89010B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007FCF303293C0  Unknown               Unknown  Unknown
+librxm-fi.so       00007FCEB03C0C70  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FCF30C841AE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FCF30507EA4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FCF30CAF73D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FCF3088BA1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FCF3043C287  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FCF30616BCE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FCF3043D0FA  MPI_Alltoall          Unknown  Unknown
+libmpifort.so.12.  00007FCF3143513E  mpi_alltoall__        Unknown  Unknown
+vasp_std           0000000000449E92  Unknown               Unknown  Unknown
+vasp_std           00000000006086D1  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DE57  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007FCF2FFF80B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007FBD8098D3C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBD8135F1FE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBD80B6B27D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBD80B6C071  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBD8131373D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBD80EEFA1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBD80AA2FC7  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBD80C7BC55  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBD80AA3F84  PMPI_Alltoallv        Unknown  Unknown
+libmpifort.so.12.  00007FBD81A9929A  pmpi_alltoallv_       Unknown  Unknown
+vasp_std           00000000004483F5  Unknown               Unknown  Unknown
+vasp_std           000000000187E06C  Unknown               Unknown  Unknown
+vasp_std           0000000001871486  Unknown               Unknown  Unknown
+vasp_std           0000000001872B94  Unknown               Unknown  Unknown
+vasp_std           0000000001871A79  Unknown               Unknown  Unknown
+vasp_std           000000000061F63D  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DDE9  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007FBD8065C0B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp_std           0000000001B17ED4  Unknown               Unknown  Unknown
+libpthread-2.31.s  00007FF9087AD3C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF908DD0747  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF90898BD70  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF90898C071  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF90913373D  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF908D0FA1A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF9088C2FC7  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF908A9BC55  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF9088C3F84  PMPI_Alltoallv        Unknown  Unknown
+libmpifort.so.12.  00007FF9098B929A  pmpi_alltoallv_       Unknown  Unknown
+vasp_std           00000000004483F5  Unknown               Unknown  Unknown
+vasp_std           000000000187E06C  Unknown               Unknown  Unknown
+vasp_std           0000000001871486  Unknown               Unknown  Unknown
+vasp_std           0000000001872B94  Unknown               Unknown  Unknown
+vasp_std           0000000001871A79  Unknown               Unknown  Unknown
+vasp_std           000000000061F63D  Unknown               Unknown  Unknown
+vasp_std           0000000000E3DDE9  Unknown               Unknown  Unknown
+vasp_std           0000000000EB0F51  Unknown               Unknown  Unknown
+vasp_std           0000000001917017  Unknown               Unknown  Unknown
+vasp_std           00000000018F1618  Unknown               Unknown  Unknown
+vasp_std           000000000040BBE2  Unknown               Unknown  Unknown
+libc-2.31.so       00007FF90847C0B3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040BAEE  Unknown               Unknown  Unknown
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 349416 RUNNING AT smart-B460MDS3HAC
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
