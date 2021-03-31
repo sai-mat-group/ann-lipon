@@ -1,0 +1,100 @@
+ running on    8 total cores
+ distrk:  each k-point on    8 cores,    1 groups
+ distr:  one band on    1 cores,    8 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 20 2021 11:25:07) complex                        
+  
+ POSCAR found type information on POSCAR LiN 
+ POSCAR found :  2 types and       4 ions
+ scaLAPACK will be used
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     The value NCORE = 6 specified in the INCAR file was overwritten,        |
+|     because it was not compatible with the 8 processes available:           |
+|     NCORE = 1                                                               |
+|     was used instead, please check that this makes sense for your           |
+|     machine.                                                                |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     For optimal performance we recommend to set                             |
+|       NCORE = 4 - approx SQRT(number of cores).                             |
+|     NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).      |
+|     This setting can greatly improve the performance of VASP for DFT.       |
+|     The default, NCORE=1 might be grossly inefficient on modern             |
+|     multi-core architectures or massively parallel machines. Do your        |
+|     own testing!!!!                                                         |
+|     Unfortunately you need to use the default for GW and RPA                |
+|     calculations (for HF NCORE is supported but not extensively tested      |
+|     yet).                                                                   |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|                                                                             |
+|               ----> ADVICE to this user running VASP <----                  |
+|                                                                             |
+|     You have a (more or less) 'small supercell' and for smaller cells       |
+|     it is recommended to use the reciprocal-space projection scheme!        |
+|     The real-space optimization is not efficient for small cells and it     |
+|     is also less accurate ...                                               |
+|     Therefore, set LREAL=.FALSE. in the INCAR file.                         |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ LDA part: xc-table for Pade appr. of Perdew
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     The determination of the symmetry of your systems shows a strong        |
+|     dependence on the tolerance parameter SYMPREC. This is often the        |
+|     result of "noise" in the structural parameters (lattice vectors         |
+|     and/or ionic positions). Set NWRITE=3 for more details.                 |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ generate k-points for:   10   10    8
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.660069746429E+02    0.66007E+02   -0.58639E+03  4480   0.890E+02
+DAV:   2    -0.780088998609E+01   -0.73808E+02   -0.68594E+02  5712   0.224E+02
+DAV:   3    -0.185828919256E+02   -0.10782E+02   -0.10695E+02  8832   0.564E+01
+DAV:   4    -0.187259761740E+02   -0.14308E+00   -0.14307E+00  4920   0.923E+00
+DAV:   5    -0.187280637459E+02   -0.20876E-02   -0.20875E-02  6808   0.865E-01    0.142E+01
+RMM:   6    -0.157007746310E+02    0.30273E+01   -0.56027E+00  5120   0.106E+01    0.665E+00
+RMM:   7    -0.156815854835E+02    0.19189E-01   -0.42267E-01  5450   0.555E+00    0.247E+00
+RMM:   8    -0.156021456967E+02    0.79440E-01   -0.12924E-01  6356   0.257E+00    0.144E+00
+RMM:   9    -0.156128920074E+02   -0.10746E-01   -0.64327E-02  6316   0.192E+00    0.466E-01
+RMM:  10    -0.156144374800E+02   -0.15455E-02   -0.20006E-02  7244   0.930E-01    0.235E-01
+RMM:  11    -0.156153343505E+02   -0.89687E-03   -0.53942E-03  6913   0.435E-01    0.110E-01
+RMM:  12    -0.156159026065E+02   -0.56826E-03   -0.23289E-03  6903   0.343E-01    0.415E-02
+RMM:  13    -0.156160526136E+02   -0.15001E-03   -0.10351E-03  7392   0.180E-01    0.273E-02
+RMM:  14    -0.156161068711E+02   -0.54257E-04   -0.36321E-04  7110   0.106E-01    0.704E-03
+RMM:  15    -0.156161241231E+02   -0.17252E-04   -0.12172E-04  6573   0.623E-02    0.534E-03
+RMM:  16    -0.156161288069E+02   -0.46838E-05   -0.42588E-05  5814   0.375E-02
+   1 F= -.15616129E+02 E0= -.15616129E+02  d E =0.000000E+00  mag=     0.0000

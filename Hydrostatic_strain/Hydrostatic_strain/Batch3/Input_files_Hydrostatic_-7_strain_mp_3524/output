@@ -1,0 +1,120 @@
+ running on    8 total cores
+ distrk:  each k-point on    8 cores,    1 groups
+ distr:  one band on    1 cores,    8 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 20 2021 11:25:07) complex                        
+  
+ POSCAR found type information on POSCAR LiP N 
+ POSCAR found :  3 types and       8 ions
+ scaLAPACK will be used
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     The value NCORE = 6 specified in the INCAR file was overwritten,        |
+|     because it was not compatible with the 8 processes available:           |
+|     NCORE = 1                                                               |
+|     was used instead, please check that this makes sense for your           |
+|     machine.                                                                |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     For optimal performance we recommend to set                             |
+|       NCORE = 4 - approx SQRT(number of cores).                             |
+|     NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).      |
+|     This setting can greatly improve the performance of VASP for DFT.       |
+|     The default, NCORE=1 might be grossly inefficient on modern             |
+|     multi-core architectures or massively parallel machines. Do your        |
+|     own testing!!!!                                                         |
+|     Unfortunately you need to use the default for GW and RPA                |
+|     calculations (for HF NCORE is supported but not extensively tested      |
+|     yet).                                                                   |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|                                                                             |
+|               ----> ADVICE to this user running VASP <----                  |
+|                                                                             |
+|     You have a (more or less) 'small supercell' and for smaller cells       |
+|     it is recommended to use the reciprocal-space projection scheme!        |
+|     The real-space optimization is not efficient for small cells and it     |
+|     is also less accurate ...                                               |
+|     Therefore, set LREAL=.FALSE. in the INCAR file.                         |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ LDA part: xc-table for Pade appr. of Perdew
+ generate k-points for:    9    9   10
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...      60
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...      60
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...      60
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...      60
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...      60
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...      60
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...      60
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...      60
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.192792828965E+03    0.19279E+03   -0.17248E+04 29448   0.113E+03
+DAV:   2    -0.425049548722E+02   -0.23530E+03   -0.22530E+03 34936   0.291E+02
+DAV:   3    -0.593525887525E+02   -0.16848E+02   -0.16694E+02 47248   0.675E+01
+DAV:   4    -0.603394048104E+02   -0.98682E+00   -0.98183E+00 42624   0.132E+01
+DAV:   5    -0.603601646814E+02   -0.20760E-01   -0.20759E-01 42576   0.191E+00    0.300E+01
+RMM:   6    -0.539378297561E+02    0.64223E+01   -0.14292E+01 30788   0.163E+01    0.128E+01
+RMM:   7    -0.540702494124E+02   -0.13242E+00   -0.30705E+00 41719   0.854E+00    0.649E+00
+RMM:   8    -0.541519775181E+02   -0.81728E-01   -0.29237E-01 44656   0.336E+00    0.351E+00
+RMM:   9    -0.541646839273E+02   -0.12706E-01   -0.11000E-01 46503   0.201E+00    0.818E-01
+RMM:  10    -0.541707429077E+02   -0.60590E-02   -0.53240E-02 51235   0.116E+00    0.267E-01
+RMM:  11    -0.541728482329E+02   -0.21053E-02   -0.22357E-02 51958   0.653E-01    0.209E-01
+RMM:  12    -0.541743058481E+02   -0.14576E-02   -0.97327E-03 54841   0.416E-01    0.132E-01
+RMM:  13    -0.541747451300E+02   -0.43928E-03   -0.31442E-03 52309   0.254E-01    0.435E-02
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   6  3      4
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   8  4      4
+RMM:  14    -0.541749534385E+02   -0.20831E-03   -0.15527E-03 53834   0.169E-01    0.227E-02
+RMM:  15    -0.541750430715E+02   -0.89633E-04   -0.62333E-04 52514   0.107E-01    0.205E-02
+RMM:  16    -0.541750719378E+02   -0.28866E-04   -0.26992E-04 49640   0.736E-02    0.117E-02
+RMM:  17    -0.541750950500E+02   -0.23112E-04   -0.13600E-04 47051   0.531E-02    0.313E-03
+RMM:  18    -0.541751017812E+02   -0.67312E-05   -0.48338E-05 37368   0.356E-02
+   1 F= -.54175102E+02 E0= -.54175102E+02  d E =0.000000E+00  mag=    -0.0000

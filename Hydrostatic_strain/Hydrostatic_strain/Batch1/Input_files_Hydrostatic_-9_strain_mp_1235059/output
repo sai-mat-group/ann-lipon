@@ -1,0 +1,88 @@
+ running on    8 total cores
+ distrk:  each k-point on    8 cores,    1 groups
+ distr:  one band on    1 cores,    8 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 20 2021 11:25:07) complex                        
+  
+ POSCAR found type information on POSCAR LiO 
+ POSCAR found :  2 types and       9 ions
+ scaLAPACK will be used
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     The value NCORE = 6 specified in the INCAR file was overwritten,        |
+|     because it was not compatible with the 8 processes available:           |
+|     NCORE = 1                                                               |
+|     was used instead, please check that this makes sense for your           |
+|     machine.                                                                |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     For optimal performance we recommend to set                             |
+|       NCORE = 4 - approx SQRT(number of cores).                             |
+|     NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).      |
+|     This setting can greatly improve the performance of VASP for DFT.       |
+|     The default, NCORE=1 might be grossly inefficient on modern             |
+|     multi-core architectures or massively parallel machines. Do your        |
+|     own testing!!!!                                                         |
+|     Unfortunately you need to use the default for GW and RPA                |
+|     calculations (for HF NCORE is supported but not extensively tested      |
+|     yet).                                                                   |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ LDA part: xc-table for Pade appr. of Perdew
+ generate k-points for:    8    7    7
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.330969364606E+03    0.33097E+03   -0.27964E+04 18568   0.127E+03
+DAV:   2    -0.217818642693E+02   -0.35275E+03   -0.33717E+03 22768   0.320E+02
+DAV:   3    -0.435862646642E+02   -0.21804E+02   -0.21543E+02 27312   0.750E+01
+DAV:   4    -0.443004161920E+02   -0.71415E+00   -0.70839E+00 29256   0.985E+00
+DAV:   5    -0.443243325590E+02   -0.23916E-01   -0.23916E-01 24256   0.124E+00    0.149E+01
+RMM:   6    -0.442556156365E+02    0.68717E-01   -0.25857E+00 21918   0.757E+00    0.928E+00
+RMM:   7    -0.439312654866E+02    0.32435E+00   -0.90546E-01 20466   0.463E+00    0.526E+00
+RMM:   8    -0.436218899688E+02    0.30938E+00   -0.45296E-01 22348   0.349E+00    0.247E+00
+RMM:   9    -0.436655354189E+02   -0.43645E-01   -0.12386E-01 23448   0.191E+00    0.182E+00
+RMM:  10    -0.436437677480E+02    0.21768E-01   -0.27791E-02 24782   0.856E-01    0.747E-01
+RMM:  11    -0.436447344902E+02   -0.96674E-03   -0.61030E-03 25502   0.462E-01    0.332E-01
+RMM:  12    -0.436452817299E+02   -0.54724E-03   -0.24864E-03 26173   0.292E-01    0.904E-02
+RMM:  13    -0.436454657554E+02   -0.18403E-03   -0.62467E-04 28758   0.131E-01    0.390E-02
+RMM:  14    -0.436455243122E+02   -0.58557E-04   -0.25094E-04 29184   0.769E-02    0.171E-02
+RMM:  15    -0.436455483211E+02   -0.24009E-04   -0.11723E-04 26762   0.480E-02    0.895E-03
+RMM:  16    -0.436455573564E+02   -0.90353E-05   -0.49472E-05 22793   0.297E-02
+   1 F= -.43645557E+02 E0= -.43645557E+02  d E =0.000000E+00  mag=     0.0013
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     Tetrahedron method does not include variations of the Fermi             |
+|     occupations, so forces and stress will be inaccurate. We suggest        |
+|     using a different smearing scheme ISMEAR = 1 or 2 for metals in         |
+|     relaxations.                                                            |
+|                                                                             |
+ -----------------------------------------------------------------------------
+

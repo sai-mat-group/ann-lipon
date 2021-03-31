@@ -1,0 +1,64 @@
+ running on   12 total cores
+ distrk:  each k-point on   12 cores,    1 groups
+ distr:  one band on    6 cores,    2 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 20 2021 11:25:07) complex                        
+  
+ POSCAR found type information on POSCAR LiN 
+ POSCAR found :  2 types and       4 ions
+ scaLAPACK will be used
+ -----------------------------------------------------------------------------
+|                                                                             |
+|               ----> ADVICE to this user running VASP <----                  |
+|                                                                             |
+|     You have a (more or less) 'small supercell' and for smaller cells       |
+|     it is recommended to use the reciprocal-space projection scheme!        |
+|     The real-space optimization is not efficient for small cells and it     |
+|     is also less accurate ...                                               |
+|     Therefore, set LREAL=.FALSE. in the INCAR file.                         |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ LDA part: xc-table for Pade appr. of Perdew
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     The determination of the symmetry of your systems shows a strong        |
+|     dependence on the tolerance parameter SYMPREC. This is often the        |
+|     result of "noise" in the structural parameters (lattice vectors         |
+|     and/or ionic positions). Set NWRITE=3 for more details.                 |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ generate k-points for:   10   10    8
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.589791712543E+02    0.58979E+02   -0.63634E+03  3368   0.118E+03
+DAV:   2    -0.863039841596E+01   -0.67610E+02   -0.63617E+02  4432   0.248E+02
+DAV:   3    -0.179625616756E+02   -0.93322E+01   -0.92782E+01  5588   0.721E+01
+DAV:   4    -0.186320526153E+02   -0.66949E+00   -0.66890E+00  5012   0.178E+01
+DAV:   5    -0.186418043960E+02   -0.97518E-02   -0.97513E-02  4828   0.243E+00    0.141E+01
+RMM:   6    -0.156368482959E+02    0.30050E+01   -0.86419E+00  3848   0.161E+01    0.657E+00
+RMM:   7    -0.156619251118E+02   -0.25077E-01   -0.75888E-01  4344   0.923E+00    0.245E+00
+RMM:   8    -0.156013410668E+02    0.60584E-01   -0.32384E-01  5331   0.395E+00    0.138E+00
+RMM:   9    -0.156107604644E+02   -0.94194E-02   -0.14570E-01  5100   0.302E+00    0.496E-01
+RMM:  10    -0.156157378724E+02   -0.49774E-02   -0.55661E-02  5726   0.171E+00    0.269E-01
+RMM:  11    -0.156186081483E+02   -0.28703E-02   -0.23046E-02  5758   0.917E-01    0.133E-01
+RMM:  12    -0.156198306823E+02   -0.12225E-02   -0.89821E-03  5707   0.694E-01    0.523E-02
+RMM:  13    -0.156204491059E+02   -0.61842E-03   -0.48418E-03  5858   0.429E-01    0.464E-02
+RMM:  14    -0.156206720201E+02   -0.22291E-03   -0.19463E-03  5578   0.265E-01    0.195E-02
+RMM:  15    -0.156207811572E+02   -0.10914E-03   -0.96322E-04  5325   0.175E-01    0.507E-03
+RMM:  16    -0.156208306184E+02   -0.49461E-04   -0.44090E-04  4924   0.117E-01    0.720E-03
+RMM:  17    -0.156208536882E+02   -0.23070E-04   -0.21475E-04  4629   0.804E-02    0.739E-03
+RMM:  18    -0.156208615757E+02   -0.78876E-05   -0.10502E-04  4475   0.608E-02    0.165E-02
+RMM:  19    -0.156208677728E+02   -0.61971E-05   -0.46189E-05  4029   0.464E-02
+   1 F= -.15620868E+02 E0= -.15620868E+02  d E =0.000000E+00  mag=     0.0000
