@@ -1,0 +1,67 @@
+ running on   12 total cores
+ distrk:  each k-point on   12 cores,    1 groups
+ distr:  one band on    6 cores,    2 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 20 2021 11:25:07) complex                        
+  
+ POSCAR found type information on POSCAR LiO 
+ POSCAR found :  2 types and       9 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ generate k-points for:    8    7    7
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.364830104620E+03    0.36483E+03   -0.28149E+04 26800   0.147E+03
+DAV:   2    -0.184258399289E+02   -0.38326E+03   -0.37007E+03 34748   0.353E+02
+DAV:   3    -0.434520985846E+02   -0.25026E+02   -0.24770E+02 39530   0.913E+01
+DAV:   4    -0.443679263138E+02   -0.91583E+00   -0.91167E+00 45080   0.125E+01
+DAV:   5    -0.444427766271E+02   -0.74850E-01   -0.74845E-01 35906   0.176E+00    0.147E+01
+RMM:   6    -0.447786525318E+02   -0.33588E+00   -0.32478E+00 30856   0.945E+00    0.107E+01
+RMM:   7    -0.441921868061E+02    0.58647E+00   -0.11671E+00 30265   0.584E+00    0.595E+00
+RMM:   8    -0.439410573419E+02    0.25113E+00   -0.55413E-01 30640   0.430E+00    0.381E+00
+RMM:   9    -0.439378624422E+02    0.31949E-02   -0.20698E-01 31602   0.259E+00    0.287E+00
+RMM:  10    -0.439063931911E+02    0.31469E-01   -0.74039E-02 32683   0.157E+00    0.127E+00
+RMM:  11    -0.439024396463E+02    0.39535E-02   -0.19109E-02 35454   0.799E-01    0.747E-01
+RMM:  12    -0.439014907880E+02    0.94886E-03   -0.64506E-03 35642   0.508E-01    0.287E-01
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   6  3      8
+RMM:  13    -0.439025377282E+02   -0.10469E-02   -0.34639E-03 38790   0.364E-01    0.110E-01
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   6  3      8
+RMM:  14    -0.439028671988E+02   -0.32947E-03   -0.12584E-03 43899   0.189E-01    0.883E-02
+RMM:  15    -0.439031402470E+02   -0.27305E-03   -0.65958E-04 42811   0.141E-01    0.810E-02
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   8  4      5
+RMM:  16    -0.439033769295E+02   -0.23668E-03   -0.42027E-04 42613   0.114E-01    0.808E-02
+RMM:  17    -0.439035268373E+02   -0.14991E-03   -0.22772E-04 42178   0.820E-02    0.818E-02
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   6  3      5
+RMM:  18    -0.439033545493E+02    0.17229E-03   -0.13827E-04 38812   0.759E-02    0.862E-02
+RMM:  19    -0.439040872431E+02   -0.73269E-03   -0.25519E-03 51247   0.302E-01    0.102E-01
+RMM:  20    -0.439048131024E+02   -0.72586E-03   -0.38903E-03 51361   0.349E-01    0.100E-01
+RMM:  21    -0.439053089417E+02   -0.49584E-03   -0.30610E-03 51022   0.301E-01    0.763E-02
+RMM:  22    -0.439055081219E+02   -0.19918E-03   -0.41327E-04 43758   0.149E-01    0.643E-02
+RMM:  23    -0.439052437641E+02    0.26436E-03   -0.72461E-03 52048   0.485E-01    0.541E-02
+RMM:  24    -0.439057301309E+02   -0.48637E-03   -0.83934E-04 46941   0.207E-01    0.169E-02
+RMM:  25    -0.439056707257E+02    0.59405E-04   -0.27310E-04 40642   0.983E-02    0.136E-02
+RMM:  26    -0.439057285695E+02   -0.57844E-04   -0.90624E-05 35984   0.614E-02    0.867E-03
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   6  3     13
+RMM:  27    -0.439057110226E+02    0.17547E-04   -0.32149E-05 27945   0.332E-02    0.419E-03
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   6  3     16
+RMM:  28    -0.439057128994E+02   -0.18768E-05    0.19759E-07 19886   0.158E-02
+   1 F= -.43905713E+02 E0= -.43905713E+02  d E =0.000000E+00  mag=     0.2016
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     Tetrahedron method does not include variations of the Fermi             |
+|     occupations, so forces and stress will be inaccurate. We suggest        |
+|     using a different smearing scheme ISMEAR = 1 or 2 for metals in         |
+|     relaxations.                                                            |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
