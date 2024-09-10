@@ -1,0 +1,60 @@
+ running on   12 total cores
+ distrk:  each k-point on   12 cores,    1 groups
+ distr:  one band on    6 cores,    2 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 20 2021 11:25:07) complex                        
+  
+ POSCAR found type information on POSCAR LiO 
+ POSCAR found :  2 types and       9 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ generate k-points for:    8    7    7
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.358834760520E+03    0.35883E+03   -0.27980E+04 26800   0.147E+03
+DAV:   2    -0.173143167426E+02   -0.37615E+03   -0.36252E+03 34902   0.348E+02
+DAV:   3    -0.428144461057E+02   -0.25500E+02   -0.25158E+02 39608   0.908E+01
+DAV:   4    -0.437388944971E+02   -0.92445E+00   -0.92048E+00 43968   0.128E+01
+DAV:   5    -0.438101421472E+02   -0.71248E-01   -0.71242E-01 35454   0.178E+00    0.145E+01
+RMM:   6    -0.441942120169E+02   -0.38407E+00   -0.30435E+00 30638   0.891E+00    0.107E+01
+RMM:   7    -0.437573538021E+02    0.43686E+00   -0.11344E+00 29622   0.575E+00    0.601E+00
+RMM:   8    -0.436040708405E+02    0.15328E+00   -0.49385E-01 30577   0.395E+00    0.449E+00
+RMM:   9    -0.434693044059E+02    0.13477E+00   -0.19712E-01 31588   0.248E+00    0.247E+00
+RMM:  10    -0.434638998415E+02    0.54046E-02   -0.69301E-02 32531   0.150E+00    0.119E+00
+RMM:  11    -0.434583523732E+02    0.55475E-02   -0.16757E-02 35497   0.756E-01    0.634E-01
+RMM:  12    -0.434580527738E+02    0.29960E-03   -0.67062E-03 36895   0.499E-01    0.356E-01
+RMM:  13    -0.434574976553E+02    0.55512E-03   -0.30733E-03 38916   0.337E-01    0.101E-01
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   8  4      4
+RMM:  14    -0.434578102703E+02   -0.31261E-03   -0.12205E-03 46197   0.182E-01    0.435E-02
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   8  4     15
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   6  3      9
+RMM:  15    -0.434579360824E+02   -0.12581E-03   -0.56287E-04 46812   0.113E-01    0.229E-02
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   8  4      2
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   8  4      8
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   8  4      3
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   6  3      8
+RMM:  16    -0.434579759865E+02   -0.39904E-04   -0.27934E-04 44781   0.749E-02    0.124E-02
+RMM:  17    -0.434579859077E+02   -0.99212E-05   -0.12007E-04 36499   0.508E-02    0.696E-03
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   8  4     16
+WARNING in EDDRMM: call to ZHEGV failed, returncode =   6  3     13
+RMM:  18    -0.434579915662E+02   -0.56585E-05   -0.50169E-05 32402   0.422E-02
+   1 F= -.43457992E+02 E0= -.43457992E+02  d E =0.000000E+00  mag=     0.0001
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     Tetrahedron method does not include variations of the Fermi             |
+|     occupations, so forces and stress will be inaccurate. We suggest        |
+|     using a different smearing scheme ISMEAR = 1 or 2 for metals in         |
+|     relaxations.                                                            |
+|                                                                             |
+ -----------------------------------------------------------------------------
+

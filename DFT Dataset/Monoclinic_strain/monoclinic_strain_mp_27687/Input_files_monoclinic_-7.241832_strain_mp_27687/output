@@ -1,0 +1,51 @@
+ running on   48 total cores
+ distrk:  each k-point on   48 cores,    1 groups
+ distr:  one band on    6 cores,    8 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 31 2021 18:09:49) complex                        
+  
+ POSCAR found type information on POSCAR LiP 
+ POSCAR found :  2 types and      64 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     The determination of the symmetry of your systems shows a strong        |
+|     dependence on the tolerance parameter SYMPREC. This is often the        |
+|     result of "noise" in the structural parameters (lattice vectors         |
+|     and/or ionic positions). Set NWRITE=3 for more details.                 |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ generate k-points for:    3    3    3
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.157629758963E+04    0.15763E+04   -0.12027E+05  8416   0.128E+03
+DAV:   2    -0.110622137262E+03   -0.16869E+04   -0.15814E+04  9904   0.246E+02
+DAV:   3    -0.296532450119E+03   -0.18591E+03   -0.18195E+03 10624   0.839E+01
+DAV:   4    -0.311047949444E+03   -0.14515E+02   -0.14426E+02 13792   0.205E+01
+DAV:   5    -0.314125496760E+03   -0.30775E+01   -0.30746E+01 14768   0.577E+00    0.423E+01
+DAV:   6    -0.312640657898E+03    0.14848E+01   -0.12918E+01  9752   0.661E+00    0.243E+01
+DAV:   7    -0.314573877117E+03   -0.19332E+01   -0.59461E+00  9808   0.445E+00    0.139E+01
+DAV:   8    -0.316790696733E+03   -0.22168E+01   -0.33703E+00  9488   0.335E+00    0.301E+00
+DAV:   9    -0.316946487288E+03   -0.15579E+00   -0.43305E-01 10376   0.137E+00    0.167E+00
+DAV:  10    -0.316968717042E+03   -0.22230E-01   -0.97833E-02 10864   0.624E-01    0.711E-01
+DAV:  11    -0.316975555089E+03   -0.68380E-02   -0.14922E-02 10000   0.281E-01    0.284E-01
+DAV:  12    -0.316978105819E+03   -0.25507E-02   -0.36458E-03 10640   0.141E-01    0.142E-01
+DAV:  13    -0.316979400191E+03   -0.12944E-02   -0.98439E-04 10432   0.722E-02    0.605E-02
+DAV:  14    -0.316979993002E+03   -0.59281E-03   -0.39994E-04  9944   0.404E-02    0.387E-02
+DAV:  15    -0.316980184377E+03   -0.19137E-03   -0.16222E-04  9784   0.228E-02    0.214E-02
+DAV:  16    -0.316980247879E+03   -0.63502E-04   -0.53914E-05  8488   0.142E-02    0.996E-03
+DAV:  17    -0.316980263891E+03   -0.16011E-04   -0.18807E-05  7728   0.907E-03    0.532E-03
+DAV:  18    -0.316980266581E+03   -0.26904E-05   -0.33455E-06  6528   0.434E-03
+   1 F= -.31698027E+03 E0= -.31698027E+03  d E =0.000000E+00  mag=    -0.0001

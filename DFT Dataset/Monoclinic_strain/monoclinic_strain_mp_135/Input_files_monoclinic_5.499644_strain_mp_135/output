@@ -1,0 +1,130 @@
+ running on    8 total cores
+ distrk:  each k-point on    8 cores,    1 groups
+ distr:  one band on    1 cores,    8 groups
+ using from now: INCAR     
+ vasp.6.1.2 22Jul20 (build Mar 20 2021 11:25:07) complex                        
+  
+ POSCAR found type information on POSCAR Li
+ POSCAR found :  1 types and       1 ions
+ scaLAPACK will be used
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     The value NCORE = 6 specified in the INCAR file was overwritten,        |
+|     because it was not compatible with the 8 processes available:           |
+|     NCORE = 1                                                               |
+|     was used instead, please check that this makes sense for your           |
+|     machine.                                                                |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     For optimal performance we recommend to set                             |
+|       NCORE = 4 - approx SQRT(number of cores).                             |
+|     NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).      |
+|     This setting can greatly improve the performance of VASP for DFT.       |
+|     The default, NCORE=1 might be grossly inefficient on modern             |
+|     multi-core architectures or massively parallel machines. Do your        |
+|     own testing!!!!                                                         |
+|     Unfortunately you need to use the default for GW and RPA                |
+|     calculations (for HF NCORE is supported but not extensively tested      |
+|     yet).                                                                   |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|                                                                             |
+|               ----> ADVICE to this user running VASP <----                  |
+|                                                                             |
+|     You have a (more or less) 'small supercell' and for smaller cells       |
+|     it is recommended to use the reciprocal-space projection scheme!        |
+|     The real-space optimization is not efficient for small cells and it     |
+|     is also less accurate ...                                               |
+|     Therefore, set LREAL=.FALSE. in the INCAR file.                         |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ LDA part: xc-table for Pade appr. of Perdew
+ generate k-points for:   13   13   15
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...     168
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...     168
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...     168
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...     168
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...     168
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...     168
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...     168
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...     168
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.208295771757E+00    0.20830E+00   -0.71548E+02 41056   0.261E+02
+DAV:   2    -0.153493843659E+01   -0.17432E+01   -0.17207E+01 59472   0.345E+01
+DAV:   3    -0.156188629299E+01   -0.26948E-01   -0.26922E-01 45352   0.317E+00
+DAV:   4    -0.156227635767E+01   -0.39006E-03   -0.38944E-03 61256   0.321E-01
+DAV:   5    -0.156227910376E+01   -0.27461E-05   -0.27447E-05 47232   0.141E-02    0.546E+00
+RMM:   6    -0.178450995921E+01   -0.22223E+00   -0.61486E-02 48746   0.201E+00    0.259E+00
+RMM:   7    -0.186330271654E+01   -0.78793E-01   -0.20914E-02 42291   0.120E+00    0.174E-01
+RMM:   8    -0.186450554265E+01   -0.12028E-02   -0.52665E-03 48164   0.639E-01    0.934E-02
+RMM:   9    -0.186471375377E+01   -0.20821E-03   -0.19011E-03 60193   0.335E-01    0.369E-02
+RMM:  10    -0.186509617208E+01   -0.38242E-03   -0.15634E-03 54260   0.305E-01    0.290E-02
+RMM:  11    -0.186515141056E+01   -0.55238E-04   -0.23237E-04 63286   0.122E-01    0.231E-02
+RMM:  12    -0.186516443253E+01   -0.13022E-04   -0.15537E-04 58628   0.954E-02    0.101E-02
+RMM:  13    -0.186517724056E+01   -0.12808E-04   -0.38590E-05 57656   0.550E-02    0.575E-03
+RMM:  14    -0.186518012663E+01   -0.28861E-05   -0.16803E-05 45439   0.322E-02
+   1 F= -.18651801E+01 E0= -.18651801E+01  d E =0.000000E+00  mag=    -0.0000
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     Tetrahedron method does not include variations of the Fermi             |
+|     occupations, so forces and stress will be inaccurate. We suggest        |
+|     using a different smearing scheme ISMEAR = 1 or 2 for metals in         |
+|     relaxations.                                                            |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
