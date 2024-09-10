@@ -1,1 +1,0 @@
-nonpolar_surface_index_(0, 0, 1)_slab_1,120
